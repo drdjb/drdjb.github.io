@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    
+    <!--
+
+    Single Page Portfolio Design
+
+    Thorsten Bell http://www.w3bl.co.uk
+
+    -->
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="portfolio, html, css, javascript">
+        <meta name="description" content="I am Senior Lecturer in the Department of Computer Science at Brunel University where I teach and carry out research into Software Services, Cybersecurity, Modelling and Simulation of Human Journeys">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+
+        <!-- Site title
+       ================================================== -->
+        <title>David Bell's Portfolio Site</title>
+
+        <!-- Font Awesome Icons CSS
+       ================================================== -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+        <!-- Main CSS
+       ================================================== -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Google web font 
+       ================================================== -->	
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Work+Sans:700,900" rel="stylesheet">
+
+        <!-- Favicon
+        ================================================== -->
+        <link rel="icon" type="image/png" href="favicon.png" />
+
+        <!-- JavaScript-->
+        <script src="script1.js"></script>
+
+    </head>
+    <body onload="welcome(); slideShow();">
+        
+    <!-- Header
+    ================================================== -->
+        <header class="site-header">
+            
+    <!-- Nav Bar
+    ================================================== -->
+        <div id="navbar">
+            <a href="#home" id="title">Dr. David Bell</a>
+            <i class="fas fa-bars" id="hamburger" onclick="openNav()"></i>
+        </div>
+            
+    <!-- Banner
+    ================================================== -->        
+            <div class="banner">
+                <h1><span class="highlightme" id="welcome">Welcome</span></h1>
+                <h3><span class="highlightme">to my Website!</span></h3>
+            </div>
+        </header>
+        
+        <!--Navigation-->
+        <div id="navPage">
+            <i class="fas fa-times" id="close" onclick="closeNav()"></i>
+            <ul id="pages">
+                <li><a href="#about" onclick="closeNav()">About</a></li>
+                <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+                <li><a href="#papers" onclick="closeNav()">Papers</a></li>
+            </ul>
+        </div>
+
+    <!-- Main Body
+    ================================================== -->
+    <!-- About
+    ================================================== -->
+        <div class="row">
+            
+            <div class="col-12">
+                <h2 id="about">Me, Myself &amp; IT</h2>
+            </div>
+            
+            <div class="col-3">
+                <img src="drdavidbell.png">
+            </div>
+            
+            <div class="col-9">
+                <p>My research lies in the modelling and simulation of human journeys (movement and decision making) – typically driven by machine learning and big data.  New perspectives are often drawn from the synthesis and hybridization of models from data and existing models (software and hardware, humans and services). I collaborate with a range of organisations from SMEs to the NHS, often resulting in innovative mobile or digital artefacts.
+                </p>
+            </div>
+            
+        </div>
+        
+    <!-- Slideshow
+    ================================================== -->
+        <div class="row">
+            
+            <a id="slideLink" href="https://www.brunel.ac.uk/computer-science/why-study-computer-science-at-brunel/skills-development/made-in-brunel-software-innovation" target="_blank">
+                <div class="col-12" id="slideshow">
+                    Made in Brunel
+                </div></a>
+        </div>
+        
+        
+    <!-- Projects
+    ================================================== -->
+        <div class="row">
+            
+            <div class="col-12">
+                <h2 id="projects">Projects</h2>
+            </div>
+            
+            <div class="col-12">
+                <ul>
+                    <li>Hidalgo – HPC and Big Data Technologies for Global Challenges (EU) 2018–2021</li>
+                    <li>Micro company productivity enhancement with Cloud Computing (Innovate UK) 2018-2019</li>
+                    <li>Simulating Strategic Change in Urgent Care (NHS/ICHP) 2017-2018</li>
+                    <li>CraftBrew Whole Brewery Management System (Innovate UK) 2016-2018</li>
+                    <li>Digital Personhood: Digital Prosumer (EPSRC) 2013-2017</li>
+                    <li>Tools for evaluation around point of care testing (Tea-PoCT) TSB 2013-2015</li>
+                    <li>Interactive Social Experience Engine (iSEE) for History and Heritage 2013-2014</li>
+                </ul>
+
+            </div>
+            
+        </div>  
+        
+        
+    <!-- Papers
+    ================================================== -->
+        <div class="row">
+            
+            <div class="col-12">
+                <h2 id="papers">Papers</h2>
+            </div>
+            
+            <div class="col-12">
+                <ul>
+                    <li>Liu, W., Wang, Z., Liu, X., Zeng, N., &amp; Bell, D. (2018). A Novel Particle Swarm Optimization Approach for Patient Clustering from Emergency Departments. IEEE Transactions on Evolutionary Computation. doi:10.1109/TEVC.2018.2878536</li>
+                    <li>Kashefi, A., Alwzinani, F., &amp; Bell, D. (n.d.). PERSPECTIVES ON TEACHING MODELING AND SIMULATION IN A DEPARTMENT OF COMPUTER SCIENCE. In Winter Simulation Conference (WSC) 2018. Sweden.</li>
+                    <li>Anagnostou, A., Taylor, S. J. E., Bell, D., Kite, S., &amp; Pattison, G. (2018). Craftbrew: Towards a low-cost brewery management system with cloud-based simulation and delivery route optimization. In Proceedings of the Operational Research Society Simulation Workshop 2018, SW 2018 (pp. 174-179).</li>
+                    <li>Suleimenova, D., Bell, D., &amp; Groen, D. (2018). Towards an automated framework for agent-based simulation of refugee movements. In Proceedings - Winter Simulation Conference (pp. 1240-1251). doi:10.1109/WSC.2017.8247870</li>
+                    <li>Taylor, S. J. E., Anagnostou, A., Bell, D., Kite, S., &amp; Pattison, G. (2018). CraftBrew: Experiences of developing a low-cost brewery management system with cloud-based simulation. In Proceedings - Winter Simulation Conference (pp. 4490-4491). doi:10.1109/WSC.2017.8248175</li>
+                    <span id="more">
+                        <li>Malizia, A., Fogli, D., Danesi, F., Turchi, T., &amp; Bell, D. (2017). TAPASPlay: A game-based learning approach to foster computation thinking skills. In Proceedings of IEEE Symposium on Visual Languages and Human-Centric Computing, VL/HCC Vol. 2017-October (pp. 345-346). doi:10.1109/VLHCC.2017.8103502</li>
+                        <li>Chan, N. T., Suleimenova, D., Bell, D., &amp; Groen, D. (2017). Modelling refugees escaping violent events: A feasibility study from an input data perspective. In Proceedings of the Operational Research Society Simulation Workshop 2018, SW 2018 (pp. 156-163).</li>
+                        <li>Bell, D. (2018). Exploring personal data futures trading with design fiction based hybrid simulation. In Proceedings - Winter Simulation Conference (pp. 1692-1703). doi:10.1109/WSC.2017.8247908</li>
+                        <li>Liu, W., Wang, Z., Liu, X., Yue, W., &amp; Bell, D. (2017). A clustering approach to triage categorization in A&amp;E departments. In ICAC 2017 - 2017 23rd IEEE International Conference on Automation and Computing: Addressing Global Challenges through Automation and Computing. doi:10.23919/IConAC.2017.8081975</li>
+                        <li>Bell, D., &amp; Mgbemena, C. (2017). Data-driven agent-based exploration of customer behavior. SIMULATION. doi:10.1177/0037549717743106</li>
+                        <li>Suleimenova, D., Bell, D., &amp; Groen, D. (2017). A generalized simulation development approach for predicting refugee destinations. Scientific Reports, 7, 13 pages. doi:10.1038/s41598-017-13828-9</li>
+                        <li>Malizia, A., Turchi, T., Danesi, F., Fogli, D., &amp; Bell, D. (2017). TAPASPlay: a Tangible Game-Based Learning Approach to Foster Computational Thinking Skills. In IS-EUD 2017 (pp. 59).</li>
+                        <li>Fogli, D., Danesi, F., Malizia, A., Turchi, T., &amp; Bell, D. (2017). Sustaining cultures of participation by fostering computational thinking skills through game-play. In CEUR Workshop Proceedings Vol. 1956.</li>
+                        <li>Bell, D., &amp; Nusir, M. (2017). Co-design for Government Service Stakeholders. In Proceedings of the 50th Hawaii International Conference on System Sciences.</li>
+                        <li>Mgbemena, C., Bell, D., &amp; Saleh, N. (2016). A Data-driven Methodology for Agent Based Exploration of Customer Retention. In Proceedings - IEEE International Symposium on Distributed Simulation and Real-Time Applications, DS-RT (pp. 108-111). doi:10.1109/DS-RT.2016.22</li>
+                        <li>Al Subhi, N. N., Bell, D., &amp; Lashmar, P. (2016). User Experience (UX) of Heritage Journeys: Design Taxonomy for Quality Measurement. In International Conference on Human-Computer Interaction (pp. 247-256). Springer.</li>
+                        <li>Dawod, Z., &amp; Bell, D. (2016). Designing Effective Teaching Interventions with Semantic Annotation. In International Conference on Human-Computer Interaction (pp. 505-518). Springer.</li>
+                        <li>Bell, D., Cordeaux, C., Stephenson, T., Dawe, H., Lacey, P., &amp; O Leary, L. (2016). Designing Effective Hybridization for Whole System Modeling and Simulation in Healthcare. In Proceedings of the 2016 Winter Simulation Conference (pp. 1511-1522). IEEE Press. Retrieved from http://dl.acm.org/citation.cfm?id=3042250.3042288</li>
+                        <li>Mgbemena, C., &amp; Bell, D. (2016). Data-driven customer behaviour model generation for agent based exploration. In Proceedings of the 49th Annual Simulation Symposium (pp. 21). Society for Computer Simulation International.</li>
+                        <li>Mgbemena, C., &amp; Bell, D. (2016). Data-driven customer behaviour model generation for agent based exploration. In Simulation Series Vol. 48 (pp. 155-161).</li>
+                        <li>Bell, D., Kashefi, A., Saleh, N., Turchi, T., &amp; Young, T. (2016). A data-driven agent based simulation platform for early health economics device evaluation. In Proceedings of the Agent-Directed Simulation Symposium (pp. 5). Society for Computer Simulation International.</li>
+                        <li>Bell, D., Turchi, T., Kashefi, A., Young, T., &amp; Saleh, N. (2016). A data-driven agent based simulation platform for Early Health economics device evaluation. In Simulation Series Vol. 48 (pp. 33-40).</li>
+                        <li>Iacob, C., Faily, S., &amp; Bell, D. (2015). Special section: software quality for mobile apps. Software Quality Journal, 23(3), 483-484. doi:10.1007/s11219-015-9276-4</li>
+                        <li>Bell, D., Al Subhi, N., &amp; Lashmar, P. (2015). Location based modelling for Heritage Mobile Applications. In UKAIS. Oxford. Retrieved from http://bura.brunel.ac.uk/handle/2438/10736</li>
+                        <li>Bell, D., Koulouri, T., Lauria, S., Macredie, R. D., &amp; Sutton, J. (2014). Microblogging as a mechanism for human–robot interaction. Knowledge-Based Systems. Retrieved from http://bura.brunel.ac.uk/handle/2438/10200</li>
+                        <li>Bell, D. A. V. I. D., Makwana, N., &amp; Mgbemena, C. (2014). Sensing Gestures for Business Intelligence. In Proceedings of the 3rd International Conference on Sensor Networks (pp. 52-60). Lisbon. Retrieved from http://www.scitepress.org/DigitalLibrary/HomePage.aspx</li>
+                        <li>Bell, D., &amp; Shirzad, S. R. (2013). Social Media Business Intelligence. International Journal of Sociotechnology and Knowledge Development, 5(3), 51-73. doi:10.4018/ijskd.2013070104</li>
+                        <li>Bell, D. J., &amp; Robaty Shirzad, S. (2013). Social Media Domain Analysis (SoMeDoA) – A Pharmaceutical Study. In International Conference on Web Information Systems and Technologies (WEBIST). Aachen, Germany.</li>
+                        <li>Bell, D., &amp; Shirzad, S. R. (2013). Social Media Business Intelligence: A Pharmaceutical Domain Analysis Study. International Journal of Sociotechnology and Knowledge Development (IJSKD), 5, 51-73.</li>
+                        <li>Alfaries, A., Bell, D., &amp; Lycett, M. (2013). Motivating service re-use with a web service ontology learning. International Journal of Web Information Systems, 9(3), 219-241. doi:10.1108/IJWIS-12-2012-0035</li>
+                        <li>Sutton, J., Bell, D., &amp; Lauria, S. (2013). Feeding a finch with social media: a bird that responds to tweets!. In Proceedings of the 27th International BCS Human Computer Interaction Conference (pp. 60). British Computer Society.</li>
+                        <li>Robaty Shirzad, S., &amp; Bell, D. (2013). A systematic literature review of flexible e-procurement marketplace. Journal of theoretical and applied electronic commerce research, 8, 49-70.</li>
+                        <li>Robaty Shirzad, S., &amp; Bell, D. (2013). A Systematic Literature Review of Flexible E-Procurement Marketplace. Journal of theoretical and applied electronic commerce research, 8(2), 9-10. doi:10.4067/S0718-18762013000200005</li>
+                        <li>Kashefi, A., Bell, D., &amp; Abbott, P. (2012). The influences of employees' emotions and cognition on IT adoption: Some perspectives from Iran. International Journal of Social and Organizational Dynamics in IT (IJSODIT), 2(3), 1-16. doi:10.4018/ijsodit.2012070101</li>
+                        <li>Bell, D., Lycett, M., de Cesare, S., &amp; Taylor, S. J. E. (2012). Service-oriented simulation using web ontology. Int. J. of Simulation and Process Modelling, 7(3), 217-227.</li>
+                        <li>Robaty Shirzad, S., &amp; Bell, D. (2012). Flexibility framework for assessing supplier selection. International Journal of e-Education, e-Business, e-Management and e-Learning, 2(6), 483-487. doi:10.7763/IJEEEE.2012.V2.168</li>
+                        <li>Bell, D., &amp; Gana, L. (2012). Algorithmic trading systems: A multifaceted view of adoption. In Proceedings of the Annual Hawaii International Conference on System Sciences (pp. 3090-3099). doi:10.1109/HICSS.2012.93</li>
+                        <li>Dawod, Z., &amp; Bell, D. (2011). Adaptive special educational needs (SEN) education on the semantic web. In UKAIS 2011 Conference and PhD Consortium. Oxford.</li>
+                        <li>Heravi, B. R., Bell, D., Lycett, M., &amp; Green, S. D. (2010). Towards an ontology for automating collaborative business processes. In Proceedings - IEEE International Enterprise Distributed Object Computing Workshop, EDOC (pp. 311-319). doi:10.1109/EDOCW.2010.37</li>
+                        <li>Bell, D., &amp; Nguyen, T. (2010). Proximal business intelligence on the semantic web. In 16th Americas Conference on Information Systems 2010, AMCIS 2010 Vol. 1 (pp. 447-459).</li>
+                        <li>Mustafee, N., Dwivedi, Y. K., Bell, D., &amp; Williams, M. D. (2010). A methodology for profiling literature using co-citation analysis. In 16th Americas Conference on Information Systems 2010, AMCIS 2010 Vol. 5 (pp. 3472-3486).</li>
+                        <li>Heravi, BR., Green, S. D., Bell, D., &amp; Lycett, M. (2010). Towards an ontology for automating collaborative business processes. In 5th International Workshop on Vocabularies, Ontologies and Rules for the Enterprise (VORTE) at the 14th IEEE International EDOC Conference. Vitoria, Brasil: IEEE.</li>
+                        <li>Heravi, B. R., Bell, D., Lycett, M., Green, S. D., &amp; Snelling, D. (2010). Towards ontology based e-business standards. In International e-Business Conference (ICE-B-2010). Athens, Greece: IEEE. Retrieved from http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5740466&tag=1</li>
+                        <li>Bell, D., &amp; Nguyen, T. (2010). Proximal business intelligence on the semantic web. In M. L. Nelson, M. J. Shaw, &amp; T. J. Strader (Eds.), Sustainable e-Business Management: Lecture Notes in Business Information Processing (Vol. 58, pp. 145-159). Springer-Verlag. doi:10.1007/978-3-642-15141-5_12</li>
+                        <li>Bell, D., Hall, T., Hannay, J. E., Pfahl, D., &amp; Acuna, S. T. (2010). Software engineering group work - Personality, patterns and performance. In SIGMIS CPR '10: Proceedings of the 2010 ACM SIGMIS Computer Personnel Research Conference (pp. 43-47). New York, NY, USA: Association for Computing Machinery. doi:10.1145/1796900.1796921</li>
+                        <li>Alfaries, A., Bell, D., &amp; Lycett, M. (2010). Ontology learning for semantic web services. In 14th Annual Conference of the UK Academy of Information Systems (UKAIS 2009). Oriel College, Oxford University. Retrieved from http://bura.brunel.ac.uk/handle/2438/4083</li>
+                        <li>Bell, D., &amp; Odofin, S. (2010). Ubiquitous information systems - understanding privacy concerns. In UKAIS Conference. Oriel College, Oxford University.</li>
+                        <li>Taylor, S. J. E., Bell, D., Mustafee, N., de Cesare, S., Lycett, M., &amp; Fishwick, P. A. (2010). Semantic web services for simulation component reuse and interoperability: an ontology approach. In A. Gunasekaran, &amp; T. Shea (Eds.), Organizational Advancements through Enterprise Information Systems: Emerging Applications and Developments (pp. 336-352). New York: IGI Global. Retrieved from http://bura.brunel.ac.uk/handle/2438/4022</li>
+                        <li>Bell, D. J. (2009). Proximity based semantic service discovery for pervasive business. In Enabling Service Business Ecosystems (ESBE'09). Athens, Greece.</li>
+                        <li>Bell, D. (2009). Ubiquitous Information Systems (UBIS): a design study of intelligent middleware and architecture. In UK Academy of Information Systems (UKAIS 2009).</li>
+                        <li>Bell, D., Heravi, B. H., &amp; Lycett, M. (2009). Sensory Semantic User Interfaces (SENSUI). In 8th International Semantic Web Conference - Semantic Sensor Networks (SSN09). Retrieved from http://bura.brunel.ac.uk/handle/2438/4063</li>
+                        <li>Jassal, A., &amp; Bell, D. (2009). Fly-by-owl: a framework for ontology driven e-commerce websites. In 8th International Semantic Web Conference (SWESE 2009).</li>
+                        <li>Bell, D. (2009). Emergent application integration of Ubiquitous Information Systems (UBIS). In ACM ICPS (2009) - Workshop on Services Integration in Pervasive Environments. doi:10.1145/1568192.1568197</li>
+                        <li>Taylor, S. J. E., de Cesare, S., Bell, D., &amp; Fishwick, P. (2008). Search and discovery: investigating the role of ontologies in commercial simulation packages. In UK Operational Research Society Simulation Workshop (pp. 309-317).</li>
+                        <li>Taylor, S. J. E., de Cesare, S., Bell, D., &amp; Fishwick, P. (2008). Search and Discovery: Investigating the Role of Ontologies in Commercial Simulation Packages. In 2008 Simulation Workshop, UK Operational Research Society.</li>
+                        <li>Bell, D., Mustafee, N., de Cesare, S., Lycett, M., &amp; Taylor, S. J. E. (2008). Ontology engineering for simulation component reuse. International Journal of Enterprise Information Systems, 4(4), 47-61. doi:10.4018/jeis.2008100104</li>
+                        <li>Bell, D., Mustafee, N., de Cesare, S., Lycett, M., &amp; Taylor, S. (2007). Semantic web service architecture for simulation model reuse. In 11th IEE/ACM International Symposium on Distributed Simulation and Real Time Applications (DSRT 2007) (pp. 129-136). Chania: IEEE. Retrieved from http://bura.brunel.ac.uk/handle/2438/3344</li>
+                        <li>Bell, D., Ludwig, S. A., &amp; Lycett, M. (2007). Enterprise application reuse: semantic discovery of business grid services. Information Technology and Management, 8(3), 223-239. doi:10.1007/s10799-007-0020-z</li>
+                        <li>Bell, D., de Cesare, S., &amp; Lycett, M. (2007). Business grid services. International Journal of Internet and Enterprise Management, 5(1), 23-38. doi:10.1504/IJIEM.2007.011589</li>
+                        <li>Bell, D., de Cesare, S., Iacovelli, N., Lycett, M., &amp; Merico, A. (2007). A framework for deriving semantic web services. Information Systems Frontiers, 9(1), 69-84. doi:10.1007/s10796-006-9018-z</li>
+                        <li>Bell, D., de Cesare, S., &amp; Lycett, M. (2006). Enterprise software grid: a business grid service ontology. In 12th Americas Conference on Information Systems.</li>
+                        <li>Bell, D., Mustafee, N., de Cesare, S., Lycett, M., &amp; Taylor, S. J. E. (2006). A web services component discovery and deployment architecture for simulation model reuse. In The 2006 European Simulation Interoperability Workshop (EUROSIW). Retrieved from http://bura.brunel.ac.uk/handle/2438/639</li>
+                        <li>Bell, D., Ludwig, S. A., &amp; Lycett, M. (2005). State specialization in a service discovery ontology: a financial services business grid. In ISCA 14th International Conference on Intelligent and Adaptive Systems and Software Engineering (IASSE).</li>
+                        <li>Bell, D., de Cesare, S., &amp; Lycett, M. (2005). Semantic transformation of web services. In On the Move to Meaningful Internet Systems 2005: OTM Workshops (Vol. 3762, pp. 856-865). Berlin / Heidelberg: Springer. doi:10.1007/11575863</li>
+                        <li>Bell, D., de Cesare, S., &amp; Lycett, M. (2005). Semantic transformation of web services. In SWWS Workshop at OTM Conference.</li>
+                        <li>Bell, D., &amp; Ludwig, S. A. (2005). Grid service discovery in the financial markets sector. In 27th International Conference on Information Technology Interfaces.</li>
+                        <li>Bell, D., &amp; Ludwig, S. A. (2005). Grid service discovery in the financial markets sector. Journal of Computing and Information Technology, 13(4), 265-270.</li>
+                    </span>
+                    <button onclick="readMore()" id="btnReadMo" value="1">Read more</button>
+                </ul>
+            </div>
+            
+        </div>  
+
+    <!-- Footer
+    ================================================== -->
+        <footer class="site-footer">
+            <a href="https://www.linkedin.com/in/drdavidbell/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/drdjbell" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.pinterest.co.uk/drdjbell/" target="_blank"><i class="fab fa-pinterest"></i></a>
+        </footer>
+        
+    <!-- JavaScript
+    ================================================== -->
+        <script>
+        // Responsive Nav //
+        function openNav(){
+            document.getElementById("navPage").setAttribute("style", "display: initial;");
+        }
+        
+        function closeNav(){
+            document.getElementById("navPage").setAttribute("style", "display: none;");
+        }
+        // Welcome //
+        var myInterval = setInterval(setWelcome, 1000);
+        var hello = ["Welcome", "Willkommen", "Welkom", "Croeso", "欢迎"];
+        var i = 0;
+ 
+        function setWelcome() {
+            var x = document.getElementById("welcome");
+            x.innerHTML = hello[i] ;
+            if ((i+1) < hello.length) {
+                i += 1;
+            } else {
+                i = 0;
+            }
+        }
+            
+        // Slideshow //
+        var newInterval = setInterval(slideShow, 3000);
+        var slideLabel = ["Made in Brunel", "GitHub", "Pinterest"];
+        var slideLink = ["https://www.brunel.ac.uk/computer-science/why-study-computer-science-at-brunel/skills-development/made-in-brunel-software-innovation", "https://github.com/drdjb/", "https://www.pinterest.co.uk/drdjbell/"];
+        var slideBG = ["'MadeInBrunel.png'", "'GitHubDrDJ.jpg'", "'PinterestDrDJ.png'"];
+        var j = 0;
+            
+        function slideShow() {
+            var x = document.getElementById("slideshow");
+            var y = document.getElementById("slideLink");
+            x.innerHTML = slideLabel[j] ;
+            x.style.backgroundImage = 'url('+slideBG[j]+')';
+            y.setAttribute("href", slideLink[j]);
+            if ((j+1) < slideLabel.length) {
+                j += 1;
+            } else {
+                j = 0;
+            }
+        }
+            
+        // Read More //
+        function readMore() {
+            if(document.getElementById("btnReadMo").value == 1){
+                document.getElementById("more").style.display = "inline";
+                document.getElementById("btnReadMo").innerHTML = "Read less";
+                document.getElementById("btnReadMo").value = 0;
+            } else if(document.getElementById("btnReadMo").value == 0){
+                document.getElementById("more").style.display = "none";
+                document.getElementById("btnReadMo").innerHTML = "Read more";
+                document.getElementById("btnReadMo").value = 1;
+            }
+        }
+
+        </script>
+        
+    </body>
+</html>
